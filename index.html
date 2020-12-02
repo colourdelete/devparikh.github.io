@@ -4,8 +4,6 @@
     <head>
         <script src=preview/js/typed.it></script>
         <!-- Meta -->
-        <script src="https://cdn.jsdelivr.net/npm/typeit@7.0.4/dist/typeit.min.js"></script>
-
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -86,23 +84,13 @@
             <div class="hero-fullscreen" style="background-image: url(preview/img/Dev.JPG);"></div>
 
             <div class="center-container">
-         
-                <div class="center-block">
-                    <h3>Hi I am</h3>
-                    <h1>Dev Parikh</h1>
-                    <h3>A TKS Innovator.</h3>
-                    <h3>A ML Enthusiast.</h3>
-                    <h3>A Growing Programmer.</h3>
-                    <script>
-                        new TypeIt("#center-block", {
-                            strings: "This is my string!",
-                            speed: 75,
-                            loop: true
-                        }).go();
-                    </script>
-                    
-
-                </div>
+                <span id="center-block"></span>
+                <script src="https://cdn.jsdelivr.net/npm/typeit@7.0.4/dist/typeit.min.js"></script>
+                <script>
+                new TypeIt('#center-block', {
+                    strings: "This is what will be typed!"
+                }).go();
+                </script>
             </div>
 
             </div>
