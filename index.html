@@ -88,8 +88,14 @@
                 <script src="https://cdn.jsdelivr.net/npm/typeit@7.0.4/dist/typeit.min.js"></script>
                 <script>
                 new TypeIt('#center-block', {
-                    strings: "This is what will be typed!"
-                }).go();
+                    loop: true,
+                    speed: 200,
+                })
+                    .type('String A')
+                    .delete(null, {speed: 200})
+                    .type('String B')
+                    .delete(null, {speed: 200})
+                    .go();
                 </script>
             </div>
 
